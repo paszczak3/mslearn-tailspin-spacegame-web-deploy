@@ -61,7 +61,7 @@ stages:
         zipAfterPublish: true
 
     - publish: '$(Build.ArtifactStagingDirectory)'
-      artifact:
+      artifact: drop
 
 - stage: 'Deploy'
   displayName: 'Deploy the web application'
